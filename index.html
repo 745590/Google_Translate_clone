@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate Clone</title>
+    <link rel="stylesheet" hrerf="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="data:image/jpeg;base64,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">
+</head>
+<body>
+    <div class="line">
+    <div class="navbar">
+        <div class="nav_icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav_logo">
+<div class="logo">
+    <div class="navsetting">
+        <i class="fa-solid fa-gear"></i>
+        <div class="navmenu">
+            <i class="fa-solid fa-border-none"></i>
+            <div class="im">
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <div class="point">
+        <div class="text">
+            <i class="fa-solid fa-language"></i>
+            <a href="#" class="T">Text</a>
+        </div>
+        <div class="image">
+            <i class="fa-regular fa-image"></i>
+            <a href="#" class="i">Image</a>
+        </div>
+        <div class="doc">
+            <i class="fa-solid fa-file"></i>
+            <a href="#" class="d">Documents</a>
+        </div>
+        <div class="web">
+            <i class="fa-solid fa-globe"></i>
+            <a href="#" class="w">Websites</a>
+        </div>
+    </div>
+    <div class="content">
+        <a href="#" class="language">Detect language</a>
+        <a href="#" class="language">Hindi</a>
+        <a href="#" class="language">English</a>
+        <a href="#" class="language">Spanish</a>
+<div class="swap">
+    <i class="fa-solid fa-right-left"></i>
+</div>
+<div class="trans">
+    <a href="#" class="language1">English</a>
+        <a href="#" class="language1">Hindi</a>
+        <a href="#" class="language1">Spanish</a>
+</div>
+    </div>
+    <div class="space">
+        <div class="space1">
+            <div class="bottom"><i class="fa-solid fa-microphone"></i></div>
+            <p class="p">0/5,000 </p>
+            <div class="अ"><i class="fa-regular fa-keyboard"></i></div>
+        </div>
+        <div class="space2">
+            Translation
+        </div>
+
+    </div>
+    <div class="feed">
+        <a href="#" class="send"><i>Send feedback</i></a>
+    </div>
+    <div class="foot">
+        <div class="ll">
+        <div class="his">
+            <div class="icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <a href="#" class="hi">History</a>
+        </div>
+        <div class="his">
+            <div class="icon"><i class="fa-solid fa-star"></i></div>
+            <a href="#" class="hi">Saved</a>
+        </div>
+        <div class="his">
+            <div class="icon"><i class="fa-solid fa-users"></i></div>
+            <a href="#" class="hi">Contribute</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
